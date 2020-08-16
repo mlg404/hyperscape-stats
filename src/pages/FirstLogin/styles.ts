@@ -41,6 +41,10 @@ const styles = StyleSheet.create({
     marginTop: 4,
     marginBottom: 16,
   },
+  picker: {
+    height: 54,
+    width: "100%"
+  },
   
   welcomeForm: {
     marginTop: 68,
@@ -68,7 +72,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 92
+    marginBottom: 24
   },
   submitText: {
     color: "#FFF",

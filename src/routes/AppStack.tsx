@@ -4,13 +4,19 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 const { Navigator, Screen } = createStackNavigator()
 
-import Landing from '../pages/Landing'
+import FirstLogin from '../pages/FirstLogin'
+import LandingOne from '../pages/LandingOne'
+import LandingTwo from '../pages/LandingTwo'
+import Logged    from './LoggedTabs'
 
 const AppStack: React.FC = () => {
   return (
     <NavigationContainer>
       <Navigator screenOptions={{headerShown: false}}>
-        <Screen name="Landing" component={Landing} />
+        <Screen name="LandingOne" component={LandingOne} />
+        <Screen name="LandingTwo" component={LandingTwo} />
+        <Screen name="FirstLogin" component={FirstLogin} />
+        <Screen name="Logged" component={Logged} />
       </Navigator>
     </NavigationContainer>
   );
